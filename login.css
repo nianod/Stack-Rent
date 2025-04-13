@@ -1,0 +1,112 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.containerL {
+    width: 100%;
+    background-color: #353432;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    /* grid-template-rows: 70px 1fr 70px; */
+    background: linear-gradient(to right, #4fa2e1, #98acee);
+
+    display: grid;
+    transition: .5s;
+}
+
+.containerL section {
+    background-color: violet;
+}
+p {
+    justify-content: center;
+    display: flex;font-weight: 600;
+    font-size: 20px;
+}
+
+.containerL h2 {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+ 
+.containerL input { 
+    padding: 6px;
+    
+    border: 1px solid #3d5d7d;
+    background: #dddfdf;
+    border-radius: 5px;
+
+}
+.containerL input:focus {
+    outline: transparent;
+}
+#paymentForm button {
+    background-color: rgba(7, 193, 193, 0.844);
+}
+#communication button {
+    background-color: rgba(7, 193, 193, 0.844);
+}
+.containerL section {
+    background-color: rgb(60, 111, 182);
+    margin: 30px auto;
+     
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 12px 50px rgba(0, 0, 1, 0.9);     
+}
+
+.containerL section p {
+    margin-top: 5px;
+    gap: 5px;
+}

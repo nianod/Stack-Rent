@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Payment</title>
+    <script src="payment.js" defer></script>
+    <script src="online.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgb(182, 181, 181);
+        }
+
+        .Conti {
+            width: 650px;
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0px 14px rgba(0, 0, 0, 0.9);
+            text-align: center;
+        }
+
+        nav {
+            background: rgb(64, 138, 228);
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .hero p {
+            margin: 20px 0;
+        }
+
+        .payoption {
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .payoption input {
+            width: 100%;
+            padding: 10px;
+            border: 1.5px solid #2b90cf;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        input:focus {
+            outline: transparent;
+        }
+
+        .pay button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(75, 213, 121);
+            color: white;
+            border: none;
+            font-size: 1rem;
+            border-radius: 2px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .pay button:hover {
+            background-color: darkcyan;
+        }
+        .cancel {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1.5rem;
+        }
+
+        .cancel button {
+            background: blue;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .cancel button a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+        #warning {
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            color: red;
+        }
+        .showStatus {
+            justify-content: center;
+            display: flex;
+        }
+    </style>
+ 
+</head>
+<body>
+
+    <div class="Conti" id="conti">
+        <nav>Make Payment</nav>
+        <div class="hero">
+            <p>Please note all services attract a convenience fee of Ksh. 50</p>
+            <div class="payoption">
+                <label>Kindly Key in the Amount You would like to pay</label> <br>
+                <input type="number" id="amountInput" placeholder="Amount to pay">
+                <label for="Payment-number"></label>
+                <input type="number" id="payment-No" placeholder="0712345678">
+                <p id="warning"></p>
+                <div class="showStatus"></div>
+            </div>
+            
+            
+
+            <div class="pay" >
+                <button id="pay">Pay Now</button>
+            </div>
+    
+        </div>
+
+
+        <div class="cancel">
+            <button id="cancel">
+               cancel
+            </button>
+        </div>
+    </div>
+   
+</body>
+</html>

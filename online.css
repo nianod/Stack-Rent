@@ -1,0 +1,435 @@
+*{
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  background-color: #1c1d1e;
+    /* background-color: rgb(60, 111, 182); */
+}
+section {
+    color: white;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    overflow: hidden; /* Ensures no scrollbars */
+}
+
+h1{
+    display: inline-block;
+    white-space: nowrap; /* Prevents wrapping */
+    animation: animating 10s linear infinite;
+    position: relative; /* For transform */
+}
+
+@keyframes animating {
+    0% {
+        transform: translateX(-100%); /* Start off-screen on the left */
+        opacity: 0; /* Fully visible */
+    }
+    50% {
+        opacity: 1; /* Keep text fully visible during movement */
+    }
+    100% {
+        transform: translateX(90%); /* Move off-screen to the right */
+        opacity: 0; /* Fade out at the end */
+    }
+} 
+/* header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    overflow: hidden;  
+}
+
+h1 {
+    display: inline-block;
+    white-space: nowrap;  
+    animation: animating 3s linear infinite;
+    position: relative;  
+
+@keyframes animating {
+    0% {
+        transform: translateX(-100%);  
+    }
+    100% {
+        transform: translateX(100%);  
+    }
+}
+} */
+h1, h2 {
+    margin: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+.general-comm, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3d5d7d;
+    background: #dddfdf;
+    border-radius: 5px;
+}
+.general-comm input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3d5d7d;
+    background: #dddfdf;
+    border-radius: 5px;
+}
+#paymentForm input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3d5d7d;
+    background: #dddfdf;
+    border-radius: 5px;
+}
+input, textarea :focus {
+    outline: transparent;
+}
+.reg-submit{
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 9px;
+    transition: 0.2s ease-out;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.response {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top:5px;
+    color: red;
+    display: none;
+}
+.communication {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    /* background-color: #353432; */
+    color: white;
+    position: fixed;
+    background: yellowgreen;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    display: grid;
+    background: linear-gradient(to right, #4fa2e1, #98acee);
+}
+ 
+.container form {
+    max-width: 98%;
+    align-items: center;
+    display: flex;
+    margin: 5px;
+ 
+}
+.container .collect-data{
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.container h2 {
+    text-align: center;
+    margin: 10px;
+}
+ 
+.container input { 
+    padding: 6px;
+    
+    border: 1px solid #3d5d7d;
+    background: #dddfdf;
+    border-radius: 5px;
+
+}
+#paymentForm button {
+    background-color: rgba(7, 193, 193, 0.844);
+}
+#communication button {
+    background-color: rgba(7, 193, 193, 0.844);
+}
+.container section {
+    background-color: rgb(60, 111, 182);
+    margin: 20px auto;
+    padding: 5px;
+     height: 82%;
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 12px 50px rgba(0, 0, 1, 0.9);     
+}
+.go-to-login {
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 3.1rem;
+    
+    margin-top: 22px;
+}
+p a {
+    border: none;
+    font-size: 15px;
+    padding: 1px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(219, 204, 213);
+    background: transparent;
+    transition: 0.5s;
+}
+p a:hover {
+    cursor: pointer;
+    background: blue;
+    color: violet;
+    border-radius: 5px;
+}
+ 
+.collect-data {
+    width: 100%;  
+
+ }
+.collect-data button {
+    border-style: none;
+    height: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
+.general-comm {
+    background-color: rgb(32, 19, 53);
+    display: flex;
+    /* gap: 20px; */
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    height: 13rem;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #1c1d1e;
+    border-style: none;
+    border: solid;
+    border-color: aqua;
+    box-shadow: 0 0 0px #6addea, 0 0 10px #6addea;
+    border-radius: 5px;
+
+}
+select {
+    height: 1.3rem;
+}
+input:focus {
+    outline: transparent;
+}
+#submit-button {
+    height: 2rem;
+    margin: 5px 0 0 35px;
+    background: rgba(7, 193, 193, 0.844);
+    border-style: none;
+    display: none;
+    
+}
+.choose-issue {
+    margin-right: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;  
+    justify-content: flex-start;  
+    margin-top: 5px;
+}
+
+.choose-issue h3 {
+    margin: 0;  
+    font-size: 1.3rem;
+}
+.choose-issue input {
+    margin-top: 5px;
+    width: 11rem;
+    height: 25px;
+    display: none;
+}
+.choose-issue input  {
+    outline: transparent;
+}
+.choose-issue select {
+    height: 2.2rem;
+    border-style: none;
+    background: aqua;
+    color: black;
+    width: 12rem;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.choose-issue select:focus {
+    outline: transparent;
+}
+#statement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 3px;
+    gap: 5px;
+    background-color: rgba(7, 193, 193, 0.844);
+    border-radius: 5px;
+    border-style: none;
+    transition: 0.5s ease-in-out;
+}
+#statement:hover {
+        /* cursor: pointer;
+        box-shadow: 0 0 20px #3cd7f3, 0 0 50px #00a9ec;
+        transform: translateY(-2px); */
+        cursor: pointer;
+        background-color: white;
+        color: rgb(1, 1, 12);
+        box-shadow: 0 0 20px #f8f8f8, 0 0 50px #f5f5f7;
+    
+}
+#statement:hover::before {
+        height: 30px;
+        width: -30px;
+}
+hr {
+    margin-top: 3rem;
+}
+.find-us {
+    display: flex;
+    justify-content: space-between;
+    font-family: helvetica;
+    cursor: pointer;
+    margin-bottom: 0%;
+}
+.find-us .social-links {
+    color: rgb(165, 220, 231);
+    padding: 2px;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+.find-us ul {
+    display: flex;
+    gap: 15px;
+}
+ul li:nth-child(1) {
+    list-style: none;
+}
+ul li {
+    padding: 2px;
+    font-size: 0.7rem;
+    color: rgb(165, 220, 231);
+}
+.paynow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.balance b {
+    text-align: center;
+    border: wheat solid;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 1.7rem;
+    width: 25%;
+    margin-bottom: 0.3rem;
+    background: #3d5d7d;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    display: none;
+    height: 200px;
+    background-color: rgb(46, 44, 44);
+    color: white;
+    border-color: #ea160e;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius:10px ;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 10);
+}
+ .view-pay-history {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;}
+.payment-statement input {
+  border-style: none;
+  height: 2rem;
+  width: 75px;
+  background: rgb(212, 68, 231);
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.5s ;
+}
+.payment-history input {
+    border-style: none;
+    height: 2rem;
+    width: 100px;
+    background: rgb(14, 93, 213);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: 0.5s;
+}
+.payment-statement input:hover {
+    cursor: pointer;
+    background: white;
+    color:  rgb(212, 68, 231);
+}
+.payment-history input:hover {
+    cursor: pointer;
+    background: white;
+    color: rgb(14, 93, 213);
+}
+.cancel {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    border-style: none;
+    margin: 30px auto;
+    height: 2rem;
+    width: 50px;
+     
+}
+.cancel input {
+    background:rgb(55, 214, 95) ;
+    border-style: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    color: white;
+    font-weight: 600;
+}
+.cancel input:hover {
+    cursor: pointer;
+    color: rgb(55, 214, 95);
+    background: white ;
+}

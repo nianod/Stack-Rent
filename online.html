@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titans rental</title>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="online.css"> 
+</head>
+<body>
+    <header>
+        <h1>TITANS RENTAL MASTER</h1>
+    </header>
+    <main>
+     <div class="container">
+         <section id="registration">
+            <h2>Create an Account</h2>
+            <p id="error-message"></p> 
+
+            <form id="registrationForm">
+                <label for="Room" id="room">Room number:</label>
+                <input type="number" id="room-number" placeholder="1/09" maxlength="5" minlength="2" required >
+                <label for="email">Email:</label>
+                <input type="email" required id="email">
+                <label for="password">Password:</label>
+                <input type="password" id="password11" maxlength="12" minlength="5" required>
+                <label for="password">Confirm Password:</label>
+                <input type="password" id="password22" maxlength="12" minlength="5" required>
+                <p class="response" id="response">Incorrect Password!! Try again</p>
+                <button type="submit" class="reg-submit" id="Register">Register</button>
+            </form>
+             <P class="go-to-login">Already have an account? 
+                <a href="/Login.html">Login</a>
+            </P>
+          </section>
+        </div> 
+        
+
+
+    <div class="collect-data" id="dash-cntenot">
+
+            <div class="general-comm">
+                <div class="communication">
+                  <section id="communication">
+                    <h2>Send A Message</h2>
+                    <div id="messages"></div>
+                    <textarea id="messageInput" placeholder="Type your message here..."></textarea>
+                    <button id="sendMessage" type="submit">Send</button>
+                  </section>
+                </div>
+                <div class="choose-issue">
+                    <section>
+                        <h3>Report An Issue</h3>
+                      <select name="issue" id="issue">
+                        <option value="Loud music">Loud Music</option>
+                        <option value="Power shock">Power shock</option>
+                        <option value="Water shortage">Water shortage</option>
+                        <option value="Rent arreas">Rent arreas</option>
+                        <option value="Theft">Theft</option>
+                        <option value="Power breakdown">Power breakdown</option>
+                        <option value="Wifi connectivity">Wifi connectivity</option>
+                      </select>
+                      <input type="text" id="user-data" placeholder="Describe you issue(Optional)">
+                      <button id="submit-button" >Submit</button>
+                    </section>
+                </div>
+                <div class="private-request">
+                    <label for="update">Updates from landlord</label>
+                    <input type="text" readonly placeholder="Everybody should pay rent before 20th">
+                </div>
+            </div> 
+            <section id="payment">
+                
+                <div class="paynow">
+                    <h2 style="text-align: center;">Rent payment</h2>
+                    <div class="balance">
+                        <b id="rent-arreas">Due rent arreas = ksh.5000  </b>
+                    </div>
+                 
+                     <a href="/payment.html">Make payment</a> 
+                     <style>
+                        a{
+                            border: 0.5px solid white;
+                            color: white;
+                            text-decoration: none;
+                            align-items: center;
+                            margin: auto;
+                            background: blue;
+                            padding: 5px;
+                            border-radius: 2px;
+                        }
+                     </style>
+                    
+                </div>
+
+                <div class="popup" id="popup">
+                    <div class="view-pay-history">
+                        <div class="payment-statement">
+                            <p>You can only see <br> payment history of the last six months</p>
+                            <input type="submit" value="View">
+                        </div>
+                        <div class="payment-history">
+                            <p>Download the entire full payment statement</p>
+                            <input type="submit" value="Download">
+                        </div>
+                    </div>
+                    <div class="cancel">
+                        <input type="reset" value="cancel" id="cancel">
+                    </div>
+                </div>
+                
+                <button id="statement">
+                    Rent statement
+                    <i class="fa-solid fa-download"></i>
+                </button>
+
+               
+
+            </section>
+        </div>
+        </div>
+        <button id="logout-btn">Logout</button>
+        <div class="wapchat">
+            <style>
+                .wapchat a {
+                    border: none;
+                    background: none;
+                    color: rgb(95, 221, 95);
+                    font-size: 40px;
+                    position: fixed;
+                    bottom: 20px;
+                    left: 20px;
+                    background-color: #25D366;
+                    color: white;
+                    border-radius: 50%;
+                    padding: 15px;
+                    font-size: 24px;
+                    box-shadow: 0 0 6px rgba(190, 226, 169, 0.9);
+
+                }
+            </style>
+<a href="https://wa.me/254113193974" target="_blank" style="text-decoration: none;">
+    <abbr title="Chat landlord">
+      <i class="fab fa-whatsapp"></i>
+    </abbr>
+  </a>
+                    
+        </div>
+        <style>
+            #logout-btn {
+              padding: 5px 10px;
+              background-color: red;
+              color: white;
+              border: none;
+              border-radius: 4px;
+              float: right;
+              margin: 10px; 
+              cursor: pointer;
+            }
+          </style>
+          
+        <hr>
+        <footer class="find-us">
+            <ul>
+                <li>&copy; 2025 Titan rental</li>
+                <li>terms</li>
+                <li>sitemap</li>
+                <li>privacy policy</li>
+            </ul>
+            <div class="social-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-solid fa-globe"></i> English (US) kes
+
+            </div>
+        </footer>
+    </main>
+     <script type="module" src="online.js"></script>
+     <script src="payment.js"></script>
+</body>
+</html>

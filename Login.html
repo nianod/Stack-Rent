@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jambazi login</title>
+    <link rel="stylesheet" href="/login.css">
+ </head>
+<body>
+    <div class="containerL">
+        <section id="registration">
+           <h2>Login</h2>
+           <form id="LoginForm">
+               <label for="Room number">Room number:</label>
+               <input type="text" id="Room-number" required>
+               <label for="password">Password:</label>
+               <input type="password" id="password" required>
+               <p id="login-error" style="color: red; font-size: 13px; font-weight: 400; display: none;"></p>
+               <button type="submit">Login</button>
+           </form>
+           <p style="font-size: 12px;"><a href="#">forgot password?</a></p>
+           <P>Don't have an account? <a href="online.html">Register</a></P>
+        </section>
+        <style>
+            a {
+                color: rgb(15, 15, 244);
+                border: none;
+                font-size: large;
+                padding: 1px;
+                display: flex;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                 background: transparent;
+                transition: 0.5s;
+            }
+            a:hover{
+                color: violet;
+                background: blue;
+            }
+        </style>
+         
+     </div>
+</body>
+</html>
